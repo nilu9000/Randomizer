@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #272626;
+  color: #d8d8d8;
+}
+h1 {
+  font-size: 25px;
+}
+h2 {
+  font-size: 20px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+img {
+  display: block;
+  width: 75%;
+  height: 75%;
+  max-width: 600px;
+  max-height: 450px;
+}
+/* .button {
+  background-color: #2932eb;
+  border: none;
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  max-width: 150px;
+  margin: 1rem auto;
+} */
+
+.list-section {
+  background-color: #6fffe9;
+  color: #272626;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+.number-section {
+  background-color: #fde74c;
+  color: #272626;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+input[type=text], input[type=number], select, textarea {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=number] {
+  width: 40%;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type=submit], .button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover, .button:hover {
+  background-color: #45a049;
+}
+
+.list-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin-bottom: 2rem;
+  padding: 20px;
+}
+
+.result {
+  font-size: 2rem;
+  font-weight: bold;
+}

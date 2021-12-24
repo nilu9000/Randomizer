@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="/wawes.jfif" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'
+    integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=' crossorigin='anonymous'></script>
+    <title>Slumpmaskin</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Niklas slumpmaskin</h1>
+
+      <div class="btn-group">
+        <button class="button list" type="button" id="listBtn">Slumpa från lista</button>
+        <button class="button number" type="button" id="numberBtn">Slumpa från tal</button>
+      </div>
+
+      <div class="list-section">
+        <div>
+          <h2>Slumpgenerator från lista</h2>
+          <div class="list-container">
+            <form id="item-form">
+              <label for="item">En i taget</label>
+              <input type='text' id='item' name="item" placeholder="Skriv in ett element..." />
+
+              <label for="multi-item">Flera på en gång</label>
+              <textarea id="multi-item" name="multi-item" placeholder="Klistra in eller skriv flera element på en gång..."></textarea>
+
+              <input id="addBtn" type="submit" value="Lägg till">
+            </form>
+          </div>
+
+        </div>
+
+      <div>
+        <ul id='item-list'>
+        </ul>
+        <button id="emptyBtn" class="button empty">Töm listan</button>
+        <hr />
+        <div class="result" id='itemResult'>
+        </div>
+        <button id="randomItemBtn" class="button random">Slumpa</button>
+      </div>
+    </div>
+
+    <div class="number-section">
+      <div>
+        <h2>Slumpgenerator från tal</h2>
+        <div>
+          <label for="item">Minsta tal</label>
+          <input type='number' id='lowerLimit' />
+        </div>
+        <div>
+          <label for="item">Högsta tal</label>
+          <input type='number' id='upperLimit' />
+        </div>
+      </div>
+      <hr />
+
+      <div class="result" id='numberResult'>
+      </div>
+      <div>
+        <button id="randomNumberBtn" class="button random">Slumpa</button>
+      </div>
+    </div>
+
+  </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
